@@ -157,6 +157,27 @@
          4. 搜尋出所有相同文字的結果
           -->
 
+    <input id="enter" type="text">
+    <button id="btnSearch">搜尋</button>
+    <p id="result"></p>
+
+    <script>
+        let btn = document.getElementById('btnSearch');
+        btn.addEventListener('click', function () {
+            // 取得輸入的內容
+            let input1 = document.getElementById('enter');
+            // 讀取輸入框資料
+            let apple = input1.value;
+            // document.getElementById('result').innerText = "輸入為：" + apple;
+
+            for (let i = 0; i < 5; i++) {
+                var str = document.getElementsByTagName('section')[i].innerHTML;
+            }
+            str.replaceAll(str, apple)
+        })
+
+    </script>
+
     <main class="container">
         <!-- 功能區塊 1 -->
         <section>
@@ -280,13 +301,9 @@
             });
         });
     </script>
-
     <script>
-        // 1. 輸入框 -- ok
-        // 2. 送出按鈕
-        // 3. 點擊送出按鈕後，可以搜尋網頁文字
-        // 4. 搜尋出所有相同文字的結果
-        
+        console.log();
+
     </script>
 </body>
 
