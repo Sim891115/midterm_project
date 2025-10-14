@@ -1,0 +1,61 @@
+.aI5QMe.r5bEn .gpjNTe {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.r5bEn .gpjNTe {
+    margin: 16px 0 16px 16px;
+}
+
+.gpjNTe {
+    display: flex;
+    justify-content: center;
+}
+
+.lSfe4c,
+.uhHOwf_BYbUcd {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.container {
+    position: relative;
+    /* 讓內部元素可以相對定位 */
+    /* height: 70px;
+    background-color: aqua; */
+}
+
+.backBtn {
+    color: cadetblue;
+    text-decoration: none;
+    background-color: #eae8e868;
+    border-style: groove;
+    border-radius: 10px;
+    border-color: white;
+    position: absolute;
+    bottom: 100px;
+    /* 離區塊上方 10px */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.backBtn:hover{
+    background-color: #eae8e8;
+}
+
+.all {
+    max-width: 900px;   /* 限制寬度 */
+    /* background: #fff; */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.allContentPadding{
+    padding-top: 100px;
+}

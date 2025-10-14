@@ -1,0 +1,154 @@
+body {
+    font-family: "Microsoft JhengHei", sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    background: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#header {
+    /* background-color: #5ac8fa; */
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+header {
+    font-size: 40px;
+}
+
+#padding,
+#padding1,
+#padding2,
+#padding3 {
+    font-size: 25px;
+    /* margin-top: 2px; */
+    /* background-color: #0071e3; */
+    padding-top: 0px;
+}
+
+.hero {
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(87, 86, 86);
+    padding: 5px 30px 20px;
+    background-image: url(./iphone17-removebg-preview.png), linear-gradient(0deg, #074079, #5ac8fa);
+    /* background-color: #0071e3; */
+    /* background: linear-gradient(0deg, #074079, #5ac8fa); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.container {
+    max-width: 85%;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    font-size: 20px;
+}
+
+section h2 {
+    border-left: 3px solid #0071e3;
+    padding-left: 10px;
+}
+
+section img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.tip {
+    background: #e6f0ff;
+    padding: 10px;
+    border-left: 2px solid #0071e3;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    margin-top: 40px;
+}
+
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #0071e3;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.1s ease;
+    z-index: 1000;
+}
+
+#backToTop:hover {
+    background-color: #005bb5;
+}
+
+a{
+    text-decoration: none;
+    color: #005bb5;
+}
+
+section a:hover{
+    color: cornflowerblue;
+}
+
+.test {
+    max-width: 100%;
+    margin: 0.5px 50px;
+    border-radius: 10px;
+}
+
+.test1 {
+    max-width: 100%;
+    /* background: #fff; */
+    margin: 0.5px 50px;
+    padding: 70px;
+    border-radius: 10px;
+}
+
+#searchBtn {
+    
+}

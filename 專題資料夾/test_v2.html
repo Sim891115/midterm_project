@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS 26 重點功能總整理</title>
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./test_others.css">
+    <!-- <style>
+        body {
+            font-family: "Microsoft JhengHei", sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            background: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #header {
+            /* background-color: #5ac8fa; */
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        header {
+            font-size: 40px;
+        }
+
+        #padding,
+        #padding1,
+        #padding2,
+        #padding3 {
+            font-size: 25px;
+            /* margin-top: 2px; */
+            /* background-color: #0071e3; */
+            padding-top: 0px;
+        }
+
+        .hero {
+            text-align: center;
+            text-shadow: 2px 2px 5px rgb(87, 86, 86);
+            padding: 5px 30px 20px;
+            background-image: url(./iphone17-removebg-preview.png), linear-gradient(0deg, #074079, #5ac8fa);
+            /* background-color: #0071e3; */
+            /* background: linear-gradient(0deg, #074079, #5ac8fa); */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            font-size: 20px;
+        }
+
+        section h2 {
+            border-left: 3px solid #0071e3;
+            padding-left: 10px;
+        }
+
+        section img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .tip {
+            background: #e6f0ff;
+            padding: 10px;
+            border-left: 2px solid #0071e3;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            color: #fff;
+            margin-top: 40px;
+        }
+    </style> -->
+</head>
+
+<body>
+
+    <!-- 頁首 -->
+    <header class="test">
+        <h1 style="font-size: 70px;" id="header">科技速報</h1>
+        <nav>
+            <ul>
+                <li id="padding">
+                    <a href="#">首頁</a>
+                </li>
+                <li id="padding1">
+                    <a href="./iOS_news.html">iOS 新聞</a>
+                </li>
+                <li id="padding2">
+                    <a href="#">操作教學</a>
+                </li>
+                <li id="padding3">
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSd9Ez0KS1zDuTCD5MmssVoqE-qKidndx-ipD2NFENgeNjEXFw/viewform?usp=dialog">災情回饋</a>
+                </li>
+            </ul>
+            <!-- <a href="#">首頁</a>
+            <a href="#">iOS 新聞</a>
+            <a href="#">教學</a>
+            <a href="#">災情回饋</a> -->
+        </nav>
+    </header>
+
+    <!-- 主視覺 -->
+    <div class="hero test1">
+        <h1>iOS 26 重點功能總整理</h1>
+        <p>帶你快速了解這次更新的所有新功能與亮點</p>
+        <!-- <img src="./iphone17-removebg-preview.png" id="iPhone"> -->
+    </div>
+
+    <!-- 1. 輸入框
+         2. 送出按鈕
+         3. 點擊送出按鈕後，可以搜尋網頁文字
+         4. 搜尋出所有相同文字的結果
+          -->
+    <input type="text">
+    <button id="searchBtn"><img src="./下載.jpeg" alt="搜尋"></button>
+
+    <main class="container">
+        <!-- 功能區塊 1 -->
+        <section>
+            <h2>1. Liquid Glass 液態玻璃風格設計</h2>
+            <img src="./2025-09-16-2025-09-16-95638.webp" alt="液態玻璃" width="500">
+
+            <p>在 iOS 26 也帶來了自 iOS 7 推出扁平化設計以來，開啟了簡潔、清爽的新時代，也具突破性的視覺改版。全新 iOS 26 設計語言被命名為 「Liquid
+                Glass（液態玻璃）」，主要靈感也來自蘋果自家 visionOS，強調通透感與光影的動態變化，並進一步拓展到 iPhone 與 iPad 的日常介面。
+                <br><br>
+                「Liquid Glass」並非單純的視覺美化，而是一種全新的介面體驗，蘋果將通透質感與動態光影效果深度融合，讓介面在不同情境下呈現出更自然的深度與變化。
+                <br><br>
+                在鎖定畫面也新增「空間場景」（Spatial Scenes） 新功能，這項新技術能將原本的 2D 照片，即時轉換成立體 3D
+                桌布，只要需選擇一張照片設定成桌布，系統便會自動運算前後景深，生成具層次感的立體效果。
+                在啟用空間場景後，當 iPhone 隨著手持角度傾斜時，整體畫面也會隨之產生深度變化，帶來接近裸視 3D 的沉浸體驗，空間場景還能透過更精細的景深運算，讓桌布中的人物、景物能真實浮現於畫面之中。
+            </p>
+
+            <div class="tip">
+                <a href="https://mrmad.com.tw/ios-spatial-scenes">👉 iOS 26空間場景怎麼用？</a>
+            </div>
+
+        </section>
+
+        <!-- 功能區塊 2 -->
+        <section>
+            <h2>2. Apple Music動態專輯</h2>
+            <img src="./175956657690718_P32318264.webp" alt="Music動態專輯" width="500">
+            <p>在 iOS 26 中，蘋果還替鎖定畫面新增全新「Apple Music動態專輯」效果，要是播放音樂時，
+                iPhone 鎖定畫面也會將專輯封面轉換為全螢幕顯示，同時還具備動態展開動畫效果，也讓鎖定畫面更加沉浸與具備視覺張力。</p>
+
+            <div class="tip">
+                <a href="https://mrmad.com.tw/apple-music-album-animation-ios-26-lock-screen-compatibility">👉
+                    哪些iPhone和APP能支援？</a>
+            </div>
+
+        </section>
+
+        <!-- 功能區塊 3 -->
+        <section>
+            <h2>3. 自訂貪睡鬧鐘時間</h2>
+            <img src="./截圖 2025-10-04 晚上11.58.58.png" alt="相機新功能" width="500">
+            <p>iPhone內建時鐘App算是很多人每天都會設定鬧鐘的首選工具，不過長期都無法調整鬧鐘內建9分鐘貪睡時間，不過就在 iOS 26 的推出，
+                蘋果開放 iPhone 使用者為每一組鬧鐘個別設定貪睡時間，從 1分鐘到 15 分鐘皆可自由選擇，預設值仍維持 9 分鐘。</p>
+
+            <div class="tip">
+                <a href="https://mrmad.com.tw/change-iphone-alarm-to-snooze-durations-remind">👉 擺脫鬧鐘稍後提醒9分鐘限制魔咒？</a>
+            </div>
+        </section>
+
+        <!-- 支援裝置 -->
+        <section>
+            <h2>支援裝置清單</h2>
+            <ul>
+                <li>iPhone 16e</li>
+                <li>iPhone 16</li>
+                <li>iPhone 16 Plus</li>
+                <li>iPhone 16 Pro</li>
+                <li>iPhone 16 Pro Max</li>
+                <li>iPhone 15</li>
+                <li>iPhone 15 Plus</li>
+                <li>iPhone 15 Pro</li>
+                <li>iPhone 15 Pro Max</li>
+                <li>iPhone 14</li>
+                <li>iPhone 14 Plus</li>
+                <li>iPhone 14 Pro</li>
+                <li>iPhone 14 Pro Max</li>
+                <li>iPhone 13</li>
+                <li>iPhone 13 mini</li>
+                <li>iPhone 13 Pro</li>
+                <li>iPhone 13 Pro Max</li>
+                <li>iPhone 12</li>
+                <li>iPhone 12 mini</li>
+                <li>iPhone 12 Pro</li>
+                <li>iPhone 12 Pro Max</li>
+                <li>iPhone 11</li>
+                <li>iPhone 11 Pro</li>
+                <li>iPhone 11 Pro Max</li>
+                <li>iPhone SE (第 2 代或更新機型)</li>
+            </ul>
+        </section>
+
+        <!-- 常見問題 -->
+        <section>
+            <h2>常見問題 (FAQ)</h2>
+            <p><b>Q：</b> 更新後 iPhone 過熱<br>
+                <b>A：</b> 關閉背景處理，減輕 CPU 負擔
+            </p>
+            <p><b>Q：</b> 更新後電池耗電快<br>
+                <b>A：</b> 位置服務改成「僅限使用時」
+            </p>
+            <p><b>Q：</b> iPhone 變得很卡、很慢<br>
+                <b>A：</b> 關閉背景執行的 App <br>
+            </p>
+        </section>
+    </main>
+
+    <!-- 頁尾 -->
+    <footer>
+        <p>© 2025 科技速報 | 追蹤我們：Facebook | Twitter | Instagram</p>
+    </footer>
+
+    <!-- 回頂部按鈕 -->
+    <button id="backToTop">▲</button>
+    <script>
+        // 取得按鈕
+        const backToTopBtn = document.getElementById("backToTop");
+
+        // 監聽捲動事件
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        });
+
+        // 點擊回頂部
+        backToTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+
+    <script>
+        // 1. 輸入框 -- ok
+        // 2. 送出按鈕
+        // 3. 點擊送出按鈕後，可以搜尋網頁文字
+        // 4. 搜尋出所有相同文字的結果
+        
+    </script>
+</body>
+
+</html>

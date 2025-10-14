@@ -1,0 +1,32 @@
+/* nav {
+    display: inline-block;
+} */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: #000000;
+    display: inline-block;
+    /* width: 100%; */
+}
+
+nav li {
+    display: inline-block;
+    padding: 2px;
+    margin: 3px 50px;
+}
+
+nav li:hover {
+    background-color: #656565;
+}
+
+.uhHOwf_BYbUcd::after {
+    background-color: rgba(0, 0, 0, 0.03);
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
