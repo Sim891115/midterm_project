@@ -149,6 +149,19 @@ section a:hover{
     border-radius: 10px;
 }
 
-#searchBtn {
-    
+#searchPosition{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    size: 100px;
+}
+
+input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+  width: 200px;
 }

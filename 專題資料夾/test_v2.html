@@ -151,13 +151,11 @@
         <!-- <img src="./iphone17-removebg-preview.png" id="iPhone"> -->
     </div>
 
-    <!-- 1. 輸入框
-         2. 送出按鈕
-         3. 點擊送出按鈕後，可以搜尋網頁文字
-         4. 搜尋出所有相同文字的結果
-          -->
-    <input type="text">
-    <button id="searchBtn"><img src="./下載.jpeg" alt="搜尋"></button>
+    <!-- 🔍 搜尋框 -->
+    <div style="text-align:center; margin-top: 30px;">
+        <input type="text" id="searchInput" placeholder="輸入關鍵字搜尋..." style="padding:8px; width:200px;">
+        <button id="searchBtn" style="padding:8px;">搜尋</button>
+    </div>
 
     <main class="container">
         <!-- 功能區塊 1 -->
@@ -281,15 +279,63 @@
                 behavior: "smooth"
             });
         });
+
+        // 搜尋框功能（模擬 Ctrl+F 效果，僅高亮文字）
+        const searchBtn = document.getElementById("searchBtn");
+        const searchInput = document.getElementById("searchInput");
+
+        searchBtn.addEventListener("click", () => {
+            const keyword = searchInput.value.trim();
+            if (!keyword) {
+                alert("請輸入要搜尋的關鍵字！");
+                return;
+            }
+
+            // 1️⃣ 清除舊的高亮
+            document.querySelectorAll("mark.highlight").forEach(mark => {
+                const parent = mark.parentNode;
+                parent.replaceChild(document.createTextNode(mark.textContent), mark);
+                parent.normalize();
+            });
+
+            // 2️⃣ 搜尋頁面文字節點，逐一比對
+            const elements = document.querySelectorAll("p, h1, h2, li, a");
+            const regex = new RegExp(`(${keyword})`, "gi");
+
+            let found = false;
+            elements.forEach(el => {
+                if (el.textContent.toLowerCase().includes(keyword.toLowerCase())) {
+                    // 將符合的文字包上 <mark>
+                    el.innerHTML = el.innerHTML.replace(regex, `<mark class="highlight">$1</mark>`);
+                    found = true;
+                }
+            });
+
+            if (!found) {
+                alert("找不到相符的文字");
+                return;
+            }
+
+            // 3️⃣ 自動捲動到第一個結果
+            const firstMark = document.querySelector("mark.highlight");
+            if (firstMark) {
+                firstMark.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                });
+            }
+        });
     </script>
 
-    <script>
-        // 1. 輸入框 -- ok
-        // 2. 送出按鈕
-        // 3. 點擊送出按鈕後，可以搜尋網頁文字
-        // 4. 搜尋出所有相同文字的結果
-        
-    </script>
+    <style>
+        /* 高亮顯示的樣式 */
+        mark.highlight {
+            background-color: yellow;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+
 </body>
 
 </html>

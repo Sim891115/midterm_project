@@ -7,6 +7,7 @@
     <title>iOS 26 重點功能總整理</title>
     <link rel="stylesheet" href="./nav.css">
     <link rel="stylesheet" href="./test_others.css">
+
     <!-- <style>
         body {
             font-family: "Microsoft JhengHei", sans-serif;
@@ -114,6 +115,12 @@
             margin-top: 40px;
         }
     </style> -->
+    <style>
+        .highLight {
+            background-color: rgb(186, 186, 183);
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 <body>
@@ -156,26 +163,43 @@
          3. 點擊送出按鈕後，可以搜尋網頁文字
          4. 搜尋出所有相同文字的結果
           -->
-
-    <input id="enter" type="text">
-    <button id="btnSearch">搜尋</button>
+    <div id="searchPosition">
+        <input id="enter" type="text">
+        <button id="btn" onclick="search()">搜尋</button>
+    </div>
     <p id="result"></p>
 
     <script>
-        let btn = document.getElementById('btnSearch');
-        btn.addEventListener('click', function () {
-            // 取得輸入的內容
-            let input1 = document.getElementById('enter');
-            // 讀取輸入框資料
-            let apple = input1.value;
-            // document.getElementById('result').innerText = "輸入為：" + apple;
+        function search() {
+            // let containerHTML = document.getElementsByClassName('container')[0].innerHTML;
+            // console.log(containerHTML); // HTMLCollection [main.container] => 陣列
 
-            for (let i = 0; i < 5; i++) {
-                var str = document.getElementsByTagName('section')[i].innerHTML;
+            let sections = document.querySelectorAll('section');
+            let keyword = enter.value.trim();
+            if (!keyword) return; // 沒輸入就不執行
+
+            document.querySelectorAll('.highLight').forEach(el => {
+                el.outerHTML = el.innerText;
+            });
+
+            for (var i = 0; i <= sections.length; i++) {
+                const containerHTML = document.querySelectorAll('section')[i].innerHTML;
+                console.log(containerHTML);
+                let result = containerHTML.replaceAll(enter.value, `<mark class='highLight'>${enter.value}</mark>`);
+                // ↑ 是我寫的
+                // ↓ 是 GPT 寫的
+                // let keyword = enter.value;
+                // let regex = new RegExp(keyword, 'gi'); // 'g'：全域，'i'：忽略大小寫（可視需求）
+                // let result = containerHTML.replace(regex, `<mark class='highLight'>${keyword}</mark>`);
+
+                document.querySelectorAll('section')[i].innerHTML = result;
+                // let a = document.getElementsByTagName('section')[i];
+                // console.log(a);
+
             }
-            str.replaceAll(str, apple)
-        })
-
+            let a = document.querySelectorAll('.highLight');
+            console.log(a);
+        }
     </script>
 
     <main class="container">
@@ -300,10 +324,6 @@
                 behavior: "smooth"
             });
         });
-    </script>
-    <script>
-        console.log();
-
     </script>
 </body>
 
