@@ -126,12 +126,12 @@ footer {
     background-color: #005bb5;
 }
 
-a{
+a {
     text-decoration: none;
     color: #005bb5;
 }
 
-section a:hover{
+section a:hover {
     color: cornflowerblue;
 }
 
@@ -149,19 +149,29 @@ section a:hover{
     border-radius: 10px;
 }
 
-#searchPosition{
+#searchPosition {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     margin-top: 5px;
-    size: 100px;
+    height: px;
 }
 
-input[type=text] {
-  width: 130px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
+#enter:focus {
+    width: 250px;
 }
-input[type=text]:focus {
-  width: 200px;
+
+#enter{
+    width: 150px;
+    height: 15px;
+    font-size: 18px;
+    padding: 10px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#btn{
+    width: 50px;
+    height: 45px;
+    font-size: 16px;
 }
