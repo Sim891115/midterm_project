@@ -177,7 +177,10 @@
 
             let sections = document.querySelectorAll('section');
             let keyword = enter.value.trim();
-            if (!keyword) return; // 沒輸入就不執行
+            if (!keyword) {  // 沒輸入就不執行
+                alert('請輸入搜尋文字');
+                return;
+            };
 
             document.querySelectorAll('.highLight').forEach(el => {
                 el.outerHTML = el.innerText;
