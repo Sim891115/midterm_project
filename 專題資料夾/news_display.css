@@ -59,3 +59,23 @@ div {
 .allContentPadding{
     padding-top: 100px;
 }
+
+a:link {
+  color: blue;        /* 預設（未點擊）連結顏色 */
+}
+
+a:visited {
+  color: purple;      /* 點擊過後的連結顏色 */
+}
+
+a:hover {
+  color: red;         /* 滑鼠移過去時的顏色 */
+}
+
+a:active {
+  color: orange;      /* 滑鼠按下那一瞬間的顏色 */
+}
+
+a {
+    text-decoration: none;
+}
